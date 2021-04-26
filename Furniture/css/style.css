@@ -1,0 +1,326 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Proxima-Nova';
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular.woff2") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima-Nova';
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova-Bold.woff2") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("ProximaNova-Bold.eot");
+  src: local("Proxima Nova Bold"), local("ProximaNova-Bold"), url("ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("ProximaNova-Bold.woff") format("woff"), url("ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Th';
+  src: url("ProximaNovaT-Thin.eot");
+  src: local("Proxima Nova Thin"), local("ProximaNovaT-Thin"), url("ProximaNovaT-Thin.eot?#iefix") format("embedded-opentype"), url("ProximaNovaT-Thin.woff") format("woff"), url("ProximaNovaT-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/*Обнуление*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+
+.header {
+  position: relative;
+}
+
+.header__top {
+  height: 60px;
+  padding: 10px 51px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__social {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 125%;
+  color: #1E2E36;
+  margin-right: 60px;
+}
+
+.header__social img {
+  height: 19px;
+}
+
+.header__social span {
+  margin-right: 5px;
+}
+
+.header__social a {
+  margin-right: 19px;
+}
+
+.header__phone {
+  position: relative;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #1E2E36;
+  padding-left: 28px;
+  background: url("../../img/icons/header/smartphone.png") left center/contain no-repeat;
+}
+
+.header__phone:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: -24px;
+  width: 10px;
+  height: 10px;
+  z-index: -1;
+  background: #fff;
+  border: 1px solid #1E2E36;
+  border-top: none;
+  border-left: none;
+}
+
+.header__phone:hover {
+  color: #44C697;
+}
+
+.header__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__item {
+  margin-right: 15px;
+}
+
+.header__item a {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #1E2E36;
+  position: relative;
+}
+
+.header__item a:before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  width: 0%;
+  height: 3px;
+  background: #44C697;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header__item a:hover:before {
+  width: 100%;
+}
+
+.header__item:last-child {
+  margin-right: 0;
+}
+
+.header hr {
+  height: 1px;
+  width: 100%;
+  background: #1E2E36;
+}
+
+.header__burger {
+  position: absolute;
+  right: 25px;
+  width: 30px;
+  height: 20px;
+}
+
+.header__burger:before,
+.header__burger:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #1E2E36;
+}
+
+.header__burger:before {
+  top: 0;
+}
+
+.header__burger:after {
+  bottom: 1px;
+}
+
+.header__burger span {
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 100%;
+  height: 2px;
+  background: #1E2E36;
+}
+
+.header__burger {
+  display: none;
+}
+
+* {
+  font-family: "Proxima-Nova";
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1300px) {
+  .promo .header__social {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .promo .header__social {
+    margin-right: 0;
+  }
+
+  .promo .header__menu {
+    display: none;
+  }
+
+  .promo .header__burger {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .header__top {
+    padding: 10px 20px;
+  }
+}
+
+.webp .header__phone{ background: url(../../img/icons/header/smartphone.webp) left center/contain no-repeat; }

@@ -1,0 +1,40 @@
+@media (max-width: 1300px) {
+    .promo {
+        .header {
+            &__social {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    
+}
+@media (max-width: 992px) {
+    
+    .promo {
+        .header {
+            &__social {
+                margin-right: 0;
+            }
+            &__menu {
+                display: none;
+            }
+            &__burger {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 576px) {
+   .header {
+       &__top {
+           padding: 10px 20px;     
+       }
+   }
+}

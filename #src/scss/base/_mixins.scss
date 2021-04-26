@@ -1,0 +1,28 @@
+// SCSS миксин для подключения шрифтов
+@mixin font($font_name, $file_name, $weight, $style) {
+
+    @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+    }
+}
+
+@mixin after_arrow {
+    &:before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        transform: rotate(45deg);
+        right: -24px;
+        width: 10px;
+        height: 10px;
+        z-index: -1;
+        background: #fff;
+        border: 1px solid #1E2E36;
+        border-top: none;
+        border-left: none;
+    }
+}

@@ -1,0 +1,17 @@
+@import "base/variables";
+@import "base/mixins";
+@import "fonts";
+@import "base/reset";
+@import "blocks/header";
+
+@import "blocks/media";
+
+* {
+    font-family: "Proxima-Nova";
+}
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+

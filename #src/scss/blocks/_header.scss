@@ -1,0 +1,112 @@
+.header {
+    position: relative;
+    &__top {
+        height: 60px;
+        padding: 10px 51px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__social {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 125%;
+        color: #1E2E36;
+        margin-right: 60px;
+        img {
+            height: 19px;
+        }
+        span {
+            margin-right: 5px;
+        }
+        a {
+            margin-right: 19px;
+        }
+    }
+    &__phone {
+        position: relative;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #1E2E36;
+        padding-left: 28px;
+        background: url('../../img/icons/header/smartphone.png') left center/contain no-repeat;
+        @include after_arrow;
+        &:hover {
+            color: $main-color;
+        }
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        margin-right: 15px;
+        a { 
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 125%;
+            text-transform: uppercase;
+            color: #1E2E36;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: -3px;
+                width: 0%;
+                height: 3px;
+                background: $main-color;
+                transition: all 0.3s;
+            }
+            &:hover:before {
+                width: 100%;
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    hr {
+        height: 1px;
+        width: 100%;
+        background: #1E2E36;
+    }
+    &__burger {
+        position: absolute;
+        right: 25px;
+        width: 30px;
+        height: 20px;
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background: #1E2E36;
+        }
+        &:before {
+            top: 0;
+        }
+        &:after {
+            bottom: 1px;
+        }
+        span {
+            position: absolute;
+            left: 0;
+            top: 9px;
+            width: 100%;
+            height: 2px;
+            background: #1E2E36;
+        }
+    }
+    &__burger {
+        display: none;
+    }
+}
+
