@@ -1,0 +1,100 @@
+.slider {
+    position: relative;
+    &__descr {
+        position: absolute;
+        top: 0;
+        background: #fff;
+        border-left: 15px solid $main-color;
+        left: 51px;
+        width: 462px;
+        height: 670px;
+        padding: 99px 0;
+        text-align: center;
+        .descr-slide {
+            position: relative;
+            &__title {
+                font-weight: bold;
+                font-size: 64px;
+                line-height: 100%;
+                color: #1E2E36;
+            }
+            &__subtitle {
+                margin-top: 50px;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 125%;
+                color: #1E2E36;
+            }
+            &__text {
+                margin-top: 10px;
+                font-size: 36px;
+                line-height: 125%;
+                color: #1E2E36;
+            }
+        }
+    }
+    .slick-prev, .slick-next {
+        position: absolute;
+        top: 550px;
+        background: #fff;
+    }
+    .slick-prev {
+        left: 250px;
+        z-index: 2;
+    }
+    .slick-next {
+        left: 290px;
+        z-index: 2;
+    }
+    
+    .slick-next:focus {
+        img {
+            opacity: 0;
+        }
+        background: url('../../img/Right_active.png') center center/contain no-repeat;
+    }
+    .slick-prev:focus {
+        img {
+            opacity: 0;
+        }
+        background: url('../../img/left_active.png') center center/contain no-repeat;
+    }
+    ul.slick-dots {
+        position: absolute;
+        top: 500px;
+        left: 250px;
+        z-index: 5;
+        display: flex;
+        width: 200px;
+        li {
+            margin-right: 2px;
+            height: 35px;
+            width: 35px;
+            background: #fff;
+            &.slick-active button {
+                display: block;
+                font-size: 25px;
+                font-weight: bold;
+            }
+        }
+        button {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            padding: 5px;
+            font-size: 20px;
+            border-radius: 100%;
+            background: #fff;
+            &:before {
+                content: '0';
+            }
+        }
+    }
+    [aria-selected="true"]:after {
+        content: '  / 4';
+        font-size: 20px;
+        font-weight: normal;
+    }
+   
+}

@@ -15,5 +15,15 @@ function testWebP(callback) {
     }else{
     document.querySelector('body').classList.add('no-webp');
     }
+});
+
+$(document).ready(function() {
+    $('.slider__items').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        prevArrow: '<button type="button" class="slick-prev"><img src="img/Left.png" alt="prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="img/right.png" alt="next"></button>'
     });
+});
 
