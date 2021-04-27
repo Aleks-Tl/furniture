@@ -1,0 +1,17 @@
+.button {
+    width: 278px;
+    height: 51px;
+    background: $main-color;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    transition: all 0.3s;
+    &:hover {
+        box-shadow: 0 0 15px rgba(0,0,0, 0.8);
+    }
+    
+}

@@ -11,14 +11,14 @@
 }
 
 @mixin after_arrow {
-    &:before {
+    &:after {
         content: '';
         position: absolute;
         top: 4px;
         transform: rotate(45deg);
-        right: -24px;
-        width: 10px;
-        height: 10px;
+        right: -18px;
+        width: 8px;
+        height: 8px;
         z-index: -1;
         background: #fff;
         border: 1px solid #1E2E36;
