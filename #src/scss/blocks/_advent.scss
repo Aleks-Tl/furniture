@@ -1,0 +1,68 @@
+.advent {
+    padding: 100px 51px 0 51px;
+    position: relative;
+    .slick-slide {
+        
+        img {
+            transform: translateX(1px);
+        }
+    }
+    .slick-prev, .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+    }
+    .slick-prev {
+        z-index: 1;
+        left: 10px;
+    }
+    .slick-next {
+        left: auto;
+        right: 25px;
+    }
+    &__slider {
+        margin-top: 52px;
+    }
+    &__slide {
+        position: relative;
+    }
+    &__descr {
+        padding-left: 30px;
+        a {
+            position: absolute;
+            bottom: 30px;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 125%;
+            color: #FFFFFF;
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: -3px;
+                width: 0%;
+                height: 3px;
+                background: $main-color;
+                transition: all 0.3s;
+            }
+            &:hover:before {
+                width: 100%;
+            }
+        }
+        .advent_text {
+            bottom: 80px;
+        }
+        span {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 500px;    
+            margin-top: 18px;
+            font-size: 18px;
+            line-height: 125%;
+            color: #FFFFFF;
+            font-weight: normal;
+            
+        }
+    }
+}

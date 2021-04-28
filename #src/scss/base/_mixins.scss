@@ -26,3 +26,15 @@
         border-left: none;
     }
 }
+@mixin before_title {
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 2px;
+        transform: translateX(-2px);
+        width: 18px;
+        height: 50px;
+        background: $main-color;
+    }
+}

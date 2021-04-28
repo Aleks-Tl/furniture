@@ -1,3 +1,15 @@
+@media (max-width: 1990px) {
+    .advent {
+        &__slide {
+            overflow: hidden;
+            margin-right: 10px;
+            
+            img {
+                max-width: 100%;
+            }            
+        }
+    }
+}
 @media (max-width: 1650px) {
     .header {
         &__list {
@@ -11,6 +23,76 @@
                 margin-left: 50px;
             }
         }
+    }
+    .slider {
+        &__items {
+            .slick-prev, .slick-next {
+                top: 50%;
+                transform: translateY(-50%);
+                background: none;
+            }
+            .slick-prev {
+                width: 30px;
+                height: 40px;
+                left: 25px;
+            }
+            .slick-next {
+                width: 30px;
+                height: 40px;
+                left: auto;
+                right: 25px;
+            }
+            .slick-next:active {
+                
+                background: none !important;
+            }
+            .slick-prev:active {
+                
+                background: none !important;
+            }
+        }
+        .descr-slide {
+            position: static;
+            width: 100%;
+            padding: 20px 0;
+            height: 270px;
+            &__title {
+                font-size: 40px;
+            }
+            &__subtitle {
+                margin-top: 20px;
+                font-size: 25px;
+            }
+            &__text {
+                font-size: 25px;
+            }
+            .button_slider {
+                margin-top: 22px;
+            }
+        }
+    }
+    .slick-dots {
+        opacity: 0;
+    }
+    
+}
+@media (max-width: 1500px) {
+    .advent {
+        &__descr {
+            padding-left: 10px;
+            a {
+                font-size: 25px;
+            }
+            .advent_text {
+                bottom: 50px;
+            }
+            span {
+                width: 400px;
+                margin-top: 0px;
+                font-size: 14px;
+            }
+        }
+
     }
 }
 @media (max-width: 1300px) {
@@ -67,6 +149,46 @@
             }
         }
     }
+    .slider {
+        .slick-prev {
+            width: 20px;
+            height: 30px;
+        }
+        .slick-next {
+            width: 20px;
+            height: 30px;
+        }
+    }
+    .advent {
+        &__slider {
+            margin-top: 30px;
+        }
+        &__title {
+            font-size: 36px;
+            &:before {
+                height: 40px;
+                width: 15px;
+            }
+        }
+        padding: 30px 20px;
+        &__descr {
+            padding-left: 10px;
+            a {
+                bottom: 15px;
+                font-size: 22px;
+            }
+            .advent_text {
+                bottom: 50px;
+            }
+            span {
+                top: 23px;
+                width: 300px;
+                margin-top: 0px;
+                font-size: 12px;
+            }
+        }
+    }
+    
 }
 
 @media (max-width: 768px) {
@@ -109,6 +231,16 @@
                 }
             }
         }  
+    }
+    .advent {
+        &__descr {
+            span {
+                width: 220px;
+                margin-top: 0px;
+                font-size: 12px;
+            }
+        }
+
     }
 }
 @media (max-width: 576px) {
