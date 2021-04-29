@@ -615,6 +615,203 @@ h6 {
   font-weight: normal;
 }
 
+.catalog {
+  padding: 100px 51px 0 51px;
+}
+
+.catalog__tabs {
+  margin-top: 75px;
+  margin-bottom: 87px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.catalog__tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalog__tab a {
+  position: relative;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 125%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1E2E36;
+  padding: 0;
+}
+
+.catalog__tab a:before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  width: 0%;
+  height: 3px;
+  background: #44C697;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.catalog__tab a:hover:before {
+  width: 100%;
+}
+
+.catalog__tab img {
+  cursor: pointer;
+}
+
+.catalog__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalog__items .catalog-item {
+  position: relative;
+  width: 586px;
+  height: 300px;
+  margin-bottom: 75px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.catalog__items .catalog-item:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.catalog__items .catalog-item img {
+  width: 100%;
+  height: auto;
+}
+
+.catalog__items .catalog-item__wrap {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.catalog__items .catalog-item__wrap:hover {
+  background: #44C697;
+}
+
+.catalog__items .catalog-item__wrap:hover .catalog-item__price,
+.catalog__items .catalog-item__wrap:hover .catalog-item__name,
+.catalog__items .catalog-item__wrap:hover .catalog-item__through {
+  color: white;
+}
+
+.catalog__items .catalog-item__wrap:hover .catalog-item {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.catalog__items .catalog-item__name,
+.catalog__items .catalog-item__price {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #1E2E36;
+}
+
+.catalog__items .catalog-item__prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.catalog__items .catalog-item__through {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 125%;
+  text-align: center;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  text-transform: uppercase;
+  color: #BCBDBB;
+}
+
+.catalog .label {
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  padding: 5px 15px;
+  background: #1E2E36;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 125%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.catalog .label_red {
+  display: inline-block;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  padding: 5px 15px;
+  background: #FF1B1B;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 125%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
 * {
   font-family: "Proxima-Nova";
 }

@@ -36,18 +36,7 @@
             font-size: 36px;
             line-height: 125%;
             color: #FFFFFF;
-            &:before {
-                content: '';
-                position: absolute;
-                bottom: -3px;
-                width: 0%;
-                height: 3px;
-                background: $main-color;
-                transition: all 0.3s;
-            }
-            &:hover:before {
-                width: 100%;
-            }
+            @include decor_underline;
         }
         .advent_text {
             bottom: 80px;
