@@ -92,7 +92,18 @@
                 font-size: 14px;
             }
         }
-
+    }
+    .catalog {
+        &__tabs {
+            margin-bottom: 50px;
+        }
+        &__items {
+            .catalog-item {
+                width: 530px;
+                height: auto;
+                margin-bottom: 20px;
+            }
+        }
     }
 }
 @media (max-width: 1300px) {
@@ -103,7 +114,33 @@
             }
         }
     }
+    .catalog {
+        &__items {
+            .catalog-item {
+                width: 500px;
+                height: auto;
+            }
+        }
+    }
 }
+
+@media (max-width: 1200px) {
+    .catalog {
+        &__items {
+            .catalog-item {
+                width: 450px;
+                height: auto;
+                margin-bottom: 25px;
+                &__name, &__price {
+                    font-size: 20px;
+                }
+            }
+            
+        }
+        
+    }
+}
+
 @media (max-width: 1100px) {
     .header {
         &__button {
@@ -121,10 +158,17 @@
         }
     }
 }
-
-@media (max-width: 1200px) {
-    
+@media (max-width: 1052px) {
+    .catalog {
+        &__items {
+            .catalog-item {
+                width: 400px;
+                height: auto;
+            }
+        }
+    }
 }
+
 @media (max-width: 992px) {
     
     .promo {
@@ -191,6 +235,34 @@
     
 }
 
+@media (max-width: 952px) {
+    .catalog {
+        &__items {
+            .catalog-item {
+                width: 350px;
+                height: auto;
+                &__name, &__price {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 842px) {
+    .catalog {
+        &__items {
+            .catalog-item {
+                width: 586px;
+                height: auto;
+                margin-right: 0;
+                &__name, &__price {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .header {
         &__top {
@@ -249,4 +321,32 @@
            padding: 10px 20px;     
        }
    }
+   .catalog {
+       padding: 30px 30px 0 30px;
+       &__tabs {
+           margin-top: 50px;
+        }
+        &__items {
+            .catalog-item {
+                width: 100%;
+                height: auto;
+                &__name, &__price {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
 }
+
+@media (max-width: 400px) {
+    .catalog {
+        &__items {
+             .catalog-item {
+                 &__name, &__price {
+                     font-size: 16px;
+                }
+            }
+        }  
+    }
+}
+ 
