@@ -720,7 +720,16 @@
             &__name, &__price {
                 font-size: 14px;
             }
-            
+            .label {
+                top: 10px;
+                padding: 5px 10px;
+                font-size: 13px;
+            }
+            .label_red {
+                top: 43px;
+                padding: 5px 10px;
+                font-size: 13px;
+            }
         }
     }
     .button_catalog {
