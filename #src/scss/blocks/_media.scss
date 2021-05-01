@@ -122,8 +122,25 @@
             }
         }
     }
+    .about {
+        &__wrap {
+            margin-top: 0;
+        }
+        &__text {
+            top: 120px;
+            
+        }
+    }
 }
-
+@media (max-width: 1204px) {
+    .about {
+        &__text {
+            overflow: auto;
+            width: 80%;
+            height: 380px;
+        }
+    }
+}
 @media (max-width: 1200px) {
     .catalog {
         &__items {
@@ -137,7 +154,18 @@
             }
             
         }
-        
+    }
+    .questions {
+        &__wrap {
+            margin-top: 50px;
+            top: 0;
+            height: 100%;
+        }
+        .feed-form {
+            width: 80%;
+            position: static;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -157,6 +185,17 @@
             }
         }
     }
+    .questions {
+        &__wrap {
+            height: 0;
+            background: #fff;
+        }
+        .feed-form {
+            width: 100%;
+            position: static;
+            
+        }
+    }
 }
 @media (max-width: 1052px) {
     .catalog {
@@ -165,6 +204,12 @@
                 width: 400px;
                 height: auto;
             }
+        }
+    }
+    .about {
+            &__text {
+            //top: 50px;
+            //height: 380px;
         }
     }
 }
@@ -232,7 +277,44 @@
             }
         }
     }
-    
+    .catalog {
+        &__title {
+            font-size: 36px;
+            &:before {
+                height: 40px;
+                width: 15px;
+            }
+        }
+    }
+    .about {
+        padding-top: 50px;
+        &__wrap {
+            margin-top: 0;
+            height: 100%;
+        }
+        &__title {
+            font-size: 36px;
+            &:before {
+                height: 40px;
+                width: 15px;
+            }
+        }
+        &__text {
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            position: static;
+        }
+    }
+    .questions {
+        &__title {
+            font-size: 36px;
+            &:before {
+                height: 40px;
+                width: 15px;
+            }
+        }
+    }
 }
 
 @media (max-width: 952px) {
@@ -336,6 +418,27 @@
             }
         }
     }
+    .about {
+        &__text {
+            padding-left: 25px;
+            padding-right: 15px;
+            padding-bottom: 20px;
+        }
+    }
+    .questions {
+        padding-top: 40px;
+        .feed-form {
+            &__title {
+                font-size: 28px;
+            }
+            &__info {
+                font-size: 14px;
+            }
+        }
+        input {
+            font-size: 16px;
+        }
+    }
 }
 
 @media (max-width: 400px) {
@@ -343,7 +446,7 @@
         &__items {
              .catalog-item {
                  &__name, &__price {
-                     font-size: 16px;
+                     font-size: 14px;
                 }
             }
         }  

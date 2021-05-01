@@ -1,0 +1,41 @@
+.about {
+    padding-top: 100px;
+    
+    &__wrap {
+        height: 675px;
+        background: url('../../img/bg_about_us.jpg') right center/contain no-repeat;
+        position: relative;
+        margin-top: 50px;
+    }
+    &__text {
+        position: absolute;
+        left: 0;
+        top: 100px;
+        background-color: #fff;
+        z-index: 1;
+        padding: 50px 30px 50px 51px;
+        border-right: 15px solid $main-color;
+        width: 791px;
+        height: 475px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 125%;
+        color: #1E2E36;
+        p {
+            margin-bottom: 15px;
+        }
+        span {
+            text-transform: uppercase;
+            color: $main-color;
+        }
+    }
+    /* &__img {
+        position: absolut;
+        right: 0;
+        top: 0;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    } */
+}

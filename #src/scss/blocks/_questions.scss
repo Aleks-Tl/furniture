@@ -1,0 +1,55 @@
+.questions {
+    padding-top: 100px;
+    padding-bottom: 109px;
+    &__wrap {
+        margin-top: 50px;
+        height: 675px;
+        background: url('../../img/bg_questions.jpg') left center/contain no-repeat;
+        position: relative;
+    }
+    &__form {
+        .feed-form {
+            position: absolute;
+            right: 0;
+            top: 100px;
+            background: #fff;
+            padding: 50px 51px 50px 30px;
+            border-left: 15px solid $main-color;
+            width: 513px;
+            height: 457px;
+            &__title {
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 125%;
+                color: #1E2E36;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            &__info {
+                margin-top: 30px;
+                font-size: 18px;
+                line-height: 125%;
+                align-items: center;
+                color: #1E2E36;
+                span {
+                    font-weight: bold;
+                }
+            }
+        }   
+        input {
+            width: 100%;
+            margin-bottom: 15px;
+            height: 51px;
+            border: 1px solid #1E2E36;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 125%;
+            color: #1E2E36;
+        }
+        
+        
+    }
+    
+}
