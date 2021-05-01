@@ -872,6 +872,7 @@ h6 {
 }
 
 .questions {
+  min-height: 700px;
   padding-top: 100px;
   padding-bottom: 109px;
 }
@@ -930,6 +931,165 @@ h6 {
   color: #1E2E36;
 }
 
+.footer {
+  background: url("../../img/bg_footer.jpg") right center/contain no-repeat;
+}
+
+.footer__wrapinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 56px 15px 51px;
+  width: 831px;
+  height: 520px;
+  background: #1E2E36;
+}
+
+.footer__wrapinfo_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer__wrapinfo_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 120px 221px;
+  grid-template-columns: 120px 221px;
+}
+
+.footer__list li {
+  margin-bottom: 15px;
+}
+
+.footer__link {
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #fff;
+  padding-left: 18px;
+}
+
+.footer__link:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 12px;
+  height: 2px;
+  background: #44C697;
+}
+
+.footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 14px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+.footer__contact {
+  height: 210px;
+}
+
+.footer__geoloc {
+  font-size: 18px;
+  line-height: 125%;
+  color: #FFFFFF;
+  padding-left: 30px;
+  background: url("../../img/icons/footer/map-pin.png") left center/contain no-repeat;
+}
+
+.footer__schedule {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 125%;
+  color: #FFFFFF;
+  padding-left: 30px;
+  background: url("../../img/icons/footer/schedule.png") left center/contain no-repeat;
+}
+
+.footer__contacts {
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #44C697;
+  background: url("../../img/icons/footer/footer_smartphone.png") left center/contain no-repeat;
+  padding-left: 30px;
+}
+
+.footer__contacts_2 {
+  margin-top: 4px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #44C697;
+  padding-left: 30px;
+}
+
+.footer__social {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 125%;
+  color: #FFFFFF;
+}
+
+.footer__social span {
+  display: block;
+  margin-bottom: -10px;
+}
+
+.footer__social a {
+  margin-right: 20px;
+}
+
+.footer__glynec {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 85px;
+  background: url("../../img/logo_glyanec.png") left center/contain no-repeat;
+  padding-left: 17px;
+}
+
 * {
   font-family: "Proxima-Nova";
 }
@@ -959,6 +1119,13 @@ h6 {
   width: 18px;
   height: 50px;
   background: #44C697;
+}
+
+.pageup {
+  position: fixed;
+  bottom: 465px;
+  left: 40px;
+  z-index: 50;
 }
 
 @media (max-width: 1990px) {
@@ -1128,6 +1295,13 @@ h6 {
   }
 }
 
+@media (max-width: 1110px) {
+  .footer__wrapinfo {
+    width: 100%;
+    min-height: 100%;
+  }
+}
+
 @media (max-width: 1100px) {
   .header__button {
     display: none;
@@ -1150,12 +1324,20 @@ h6 {
     width: 100%;
     position: static;
   }
+
+  .footer {
+    height: 100%;
+  }
 }
 
 @media (max-width: 1052px) {
   .catalog__items .catalog-item {
     width: 400px;
     height: auto;
+  }
+
+  .questions {
+    padding-top: 40px;
   }
 }
 
@@ -1314,6 +1496,26 @@ h6 {
   .header__category_list:after {
     top: 24px;
   }
+
+  .footer__wrapinfo {
+    position: relative;
+    display: block;
+    height: 100%;
+  }
+
+  .footer__geoloc {
+    margin-top: 20px;
+  }
+
+  .footer__list {
+    margin-top: 20px;
+  }
+
+  .footer__copyright {
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+  }
 }
 
 @media (max-width: 633px) {
@@ -1343,6 +1545,12 @@ h6 {
     width: 220px;
     margin-top: 0px;
     font-size: 12px;
+  }
+
+  .footer__copyright {
+    width: 280px;
+    bottom: 55px;
+    left: 28px;
   }
 }
 
@@ -1390,6 +1598,41 @@ h6 {
   .questions input {
     font-size: 16px;
   }
+
+  .footer {
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 411px) {
+  .footer__logo img {
+    width: 80%;
+  }
+
+  .footer__link {
+    font-size: 15px;
+  }
+
+  .footer__list {
+    -ms-grid-columns: 100px 200px;
+    grid-template-columns: 100px 200px;
+  }
+
+  .footer__list li {
+    margin-bottom: 15px;
+  }
+
+  .footer__wrapinfo {
+    padding-left: 20px;
+  }
+
+  .footer__copyright {
+    left: -5px;
+  }
+
+  .footer__glynec {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1410,3 +1653,13 @@ h6 {
 .webp .about__wrap{ background: url(../../img/bg_about_us.webp) right center/contain no-repeat; }
 
 .webp .questions__wrap{ background: url(../../img/bg_questions.webp) left center/contain no-repeat; }
+
+.webp .footer{ background: url(../../img/bg_footer.webp) right center/contain no-repeat; }
+
+.webp .footer__geoloc{ background: url(../../img/icons/footer/map-pin.webp) left center/contain no-repeat; }
+
+.webp .footer__schedule{ background: url(../../img/icons/footer/schedule.webp) left center/contain no-repeat; }
+
+.webp .footer__contacts{ background: url(../../img/icons/footer/footer_smartphone.webp) left center/contain no-repeat; }
+
+.webp .footer__glynec{ background: url(../../img/logo_glyanec.webp) left center/contain no-repeat; }

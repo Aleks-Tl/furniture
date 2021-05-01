@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Furniture.test</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 
@@ -14,7 +17,7 @@
     <section class="promo">
         <div class="container">
 
-            <header class="header">
+            <header class="header" id="up">
                 <div class="header__top">
                     <div class="header__wrapper">
                         <div class="header__social">
@@ -210,12 +213,12 @@
             <button class="button button_catalog">В каталог</button>
         </div>
     </section>
-
+    
     <section class="about">
         <div class="container">
             <div class="about__title title">Про нас</div>
             <div class="about__wrap">
-                <div class="about__text">
+                <div class="about__text animate__animated animate__backInRight wow" data-wow-duration="1s" data-wow-delay=".6s">
                     <p><span>"Furniture"</span> – "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure </p>
@@ -229,7 +232,7 @@
         <div class="questions__title title">Залишились питання?</div>
         <div class="questions__wrap">
             <div class="questions__form">
-                <form action="#" class="feed-form">
+                <form action="#" class="feed-form  animate__animated animate__backInLeft wow" data-wow-duration="1s" data-wow-delay=".6s">
                     <div class="feed-form__title">Замовте консультацію</div>
                     <input type="text" name="name" required placeholder="Віталій">
                     <input type="tel" name="phone" required placeholder="Номер телефону">
@@ -241,9 +244,57 @@
         </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__wrapinfo">
+                    <div class="footer__wrapinfo_left">
+                    <div class="footer__logo"><img src="img/logo_footer.png" alt="logo_footer"></div>
+                    <div class="footer__menu">
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Дивани</a></li>
+                            <li><a href="#" class="footer__link">АкцІї</a></li>
+                            <li><a href="#" class="footer__link">ліжка</a></li>
+                            <li><a href="#" class="footer__link">Доставка та оплата</a></li>
+                            <li><a href="#" class="footer__link">Крісла</a></li>
+                            <li><a href="#" class="footer__link">про нас</a></li>
+                            <li><a href="#" class="footer__link">шафи</a></li>
+                            <li><a href="#" class="footer__link">контакти</a></li>
+                            <li><a href="#" class="footer__link">Кухні</a></li><br>
+                            <li><a href="#" class="footer__link">комоди</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__copyright">© ТОВ Furniture, працюємо з 2006 року</div>
+                    </div>
+                    <div class="footer__wrapinfo_right">
+                        <div class="footer__contact">
+                            <div class="footer__geoloc">TEST</div>
+                            <div class="footer__schedule">Пн-Пт, з 10 до 18</div>
+                            <div class="footer__contacts">(099) 111 22 33</div>
+                            <div class="footer__contacts_2">(099) 222 33 44</div>
+                            <div class="footer__social">
+                                <span>Ми в соціальних мережах:</span><br>
+                                    <a href="#" class="footer__telegram"><img src="img/icons/footer/Telegram.png" alt="telegram"></a>
+                                    <a href="#" class="footer__facebook"><img src="img/icons/footer/facebook.png" alt="facebook"></a>
+                                    <a href="#" class="footer__instagram"><img src="img/icons/footer/instagram.png" alt="instagram"></a>     
+                            </div>
+                        </div>
+                        <a href="https://glyanec.net/ua" class="footer__glynec">Глянець — розробка інтернет-магазинів</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#up" class="pageup">
+        <img src="img/arrow_up.png" alt="pageup">
+    </a>
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="js/script.min.js"></script>
 </body>
 </html>

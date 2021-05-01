@@ -9,7 +9,7 @@
 @import "blocks/catalog";
 @import "blocks/about";
 @import "blocks/questions";
-
+@import "blocks/footer";
 @import "blocks/media";
 
 * {
@@ -27,6 +27,14 @@
     text-align: center;
     color: #1E2E36;
     @include before_title;
+}
+
+.pageup {
+    //display: none;
+    position: fixed;
+    bottom: 465px;
+    left: 40px;
+    z-index: 50;
 }
 
 

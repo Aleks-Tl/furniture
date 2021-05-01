@@ -1,0 +1,114 @@
+.footer {
+    background: url('../../img/bg_footer.jpg') right center/contain no-repeat;
+    &__wrapinfo {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 56px 15px 51px;
+        width: 831px;
+        height: 520px;
+        background: #1E2E36;
+        &_left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        &_right {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    }
+    &__list {
+        //margin-top: 20px;
+        display: grid;
+        grid-template-columns: 120px 221px;
+        li {
+            margin-bottom: 15px;
+        }
+    }
+    &__link {
+        position: relative;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 125%;
+        text-transform: uppercase;
+        color: #fff;
+        padding-left: 18px;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 2px;
+            background: $main-color;
+        }
+    }
+    &__copyright {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 14px;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+    &__contact {
+        height: 210px; 
+    }
+    &__geoloc {
+        font-size: 18px;
+        line-height: 125%;
+        color: #FFFFFF;
+        padding-left: 30px;
+        background: url('../../img/icons/footer/map-pin.png') left center/contain no-repeat;
+    }
+    &__schedule {
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 125%;
+        color: #FFFFFF;
+        padding-left: 30px;
+        background: url('../../img/icons/footer/schedule.png') left center/contain no-repeat;
+    }
+    &__contacts {
+        margin-top: 16px;
+        font-size: 18px;
+        line-height: 125%;
+        text-transform: uppercase;
+        color: $main-color;
+        background: url('../../img/icons/footer/footer_smartphone.png') left center/contain no-repeat;
+        padding-left: 30px;
+        &_2 {
+            margin-top: 4px;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: $main-color;
+            padding-left: 30px;
+        }
+    }
+    &__social {
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 125%;
+        color: #FFFFFF;
+        span {
+            display: block;
+            margin-bottom: -10px;
+        }
+        a {
+            margin-right: 20px;
+        }
+    }
+    &__glynec {
+        font-family: 'Cuprum', sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 85px;
+        background: url('../../img/logo_glyanec.png') left center/contain no-repeat;
+        padding-left: 17px;
+    }
+}
