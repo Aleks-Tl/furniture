@@ -1,5 +1,5 @@
 .footer {
-    background: url('../../img/bg_footer.jpg') right center/contain no-repeat;
+    background: url('../img/bg_footer.jpg') right center/contain no-repeat;
     &__wrapinfo {
         display: flex;
         justify-content: space-between;
@@ -62,7 +62,7 @@
         line-height: 125%;
         color: #FFFFFF;
         padding-left: 30px;
-        background: url('../../img/icons/footer/map-pin.png') left center/contain no-repeat;
+        background: url('../img/icons/footer/map-pin.png') left center/contain no-repeat;
     }
     &__schedule {
         margin-top: 15px;
@@ -70,7 +70,7 @@
         line-height: 125%;
         color: #FFFFFF;
         padding-left: 30px;
-        background: url('../../img/icons/footer/schedule.png') left center/contain no-repeat;
+        background: url('../img/icons/footer/schedule.png') left center/contain no-repeat;
     }
     &__contacts {
         margin-top: 16px;
@@ -78,7 +78,7 @@
         line-height: 125%;
         text-transform: uppercase;
         color: $main-color;
-        background: url('../../img/icons/footer/footer_smartphone.png') left center/contain no-repeat;
+        background: url('../img/icons/footer/footer_smartphone.png') left center/contain no-repeat;
         padding-left: 30px;
         &_2 {
             margin-top: 4px;
@@ -108,7 +108,7 @@
         text-transform: uppercase;
         color: #FFFFFF;
         margin-top: 85px;
-        background: url('../../img/logo_glyanec.png') left center/contain no-repeat;
+        background: url('../img/logo_glyanec.png') left center/contain no-repeat;
         padding-left: 17px;
     }
 }

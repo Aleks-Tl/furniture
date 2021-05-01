@@ -1,11 +1,10 @@
 .questions {
-    min-height: 700px;
     padding-top: 100px;
     padding-bottom: 109px;
     &__wrap {
         margin-top: 50px;
         height: 675px;
-        background: url('../../img/bg_questions.jpg') left center/contain no-repeat;
+        background: url('../img/bg_questions.jpg') left center/contain no-repeat;
         position: relative;
     }
     &__form {

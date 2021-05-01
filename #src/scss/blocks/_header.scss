@@ -35,7 +35,7 @@
         text-transform: uppercase;
         color: #1E2E36;
         padding-left: 28px;
-        background: url('../../img/icons/header/smartphone.png') left center/contain no-repeat;
+        background: url('../img/icons/header/smartphone.png') left center/contain no-repeat;
         @include after_arrow;
         &:hover {
             color: $main-color;
@@ -147,7 +147,7 @@
         text-transform: uppercase;
         color: #1E2E36;
         cursor: pointer;
-        background: url('../../img/cart.png') left center/contain no-repeat;
+        background: url('../img/cart.png') left center/contain no-repeat;
     }
 }
 

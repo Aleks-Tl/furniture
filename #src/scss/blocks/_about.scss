@@ -1,9 +1,9 @@
 .about {
     padding-top: 100px;
-    
     &__wrap {
+        position: relative;
         height: 675px;
-        background: url('../../img/bg_about_us.jpg') right center/contain no-repeat;
+        background: url('../img/bg_about_us.jpg') right center/contain no-repeat;
         position: relative;
         margin-top: 50px;
     }
